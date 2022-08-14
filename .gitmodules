@@ -1,0 +1,3 @@
+[submodule "dynasm-toolchain"]
+	path = dynasm-toolchain
+	url = https://github.com/intbyte-100/dynasm-toolchain
