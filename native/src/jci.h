@@ -3,6 +3,11 @@
 #include <stdint.h>
 
 
+enum jci_conventions {
+    jci_cdecl,
+    jci_fastcall
+};
+
 enum jci_types {
     jci_long,
     jci_double,
@@ -16,6 +21,7 @@ typedef void* jci_jni_func;
 typedef void* jci_c_func;
 
 typedef struct {
+    uint8_t convention;
     uint8_t returnType;
     uint8_t args_count;
     uint8_t argument_type[];
